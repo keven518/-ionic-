@@ -1,0 +1,30 @@
+<ion-view>
+    <ion-header-bar align-title="center" class="bar-stable bar-assertive">
+        <div class="button icon ion-ios-arrow-back button-clear"></div>
+        <h1 class="title">提现</h1>
+
+    </ion-header-bar>
+
+    <ion-content has-bouncing="true" class="scroll-content ionic-scroll my_home_content">
+
+        <div class="list padding-top">
+            <label class="item item-input wallet_input  ">
+                <span>交易密码</span>
+
+                <input type="password" value="123456"> <i class="icon ion-close-circled"></i>
+                <img src="img/icon_eye.png" class="icon_eye">
+            </label>
+            <label class="item item-input wallet_input">
+                <span>验证码</span>
+                <input type="text" placeholder="请输入验证码" value="91212">
+                <a class=" button button-small button-stable">已发送45秒</a>
+
+            </label>
+
+        </div>
+
+        <div class="padding-left padding-right">
+            <button class="button button-assertive button-block" ng-click="goaccountWithdrawSuccess()">确认提现</button>
+        </div>
+    </ion-content>
+</ion-view>

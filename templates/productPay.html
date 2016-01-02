@@ -1,0 +1,40 @@
+<ion-view>
+    <ion-header-bar align-title="center" class="bar-stable bar-assertive">
+        <div class="button icon ion-ios-arrow-back button-clear"></div>
+        <h1 class="title">支付验证</h1>
+    </ion-header-bar>
+    <ion-content has-bouncing="true" class="scroll-content ionic-scroll start_content_product ">
+        <div class="list zf_tit assertive-bg padding">
+            <h3>朝阳永续fof1号a期</h3>
+        </div>
+        <div class="list mb_7">
+            <div class="bank_ct">
+                <div class="bank_icon fl"><img src="img/bank_1.jpg"></div>
+                <div class="bank_info fl">
+                    <h3>工商银行</h3>
+
+                    <p>尾号8534</p>
+                </div>
+                <p class="bank_num fr">支付限额<span>200万元</span></p>
+            </div>
+            <div class="bank_zf">
+                <div class="bank_txt">
+                    <p>支付金额</p>
+
+                    <h3>10000元</h3>
+                </div>
+            </div>
+        </div>
+        <div class="list mb_7">
+            <label class="item item-input reg_li"> <span> 交易密码</span>
+                <input type="password" placeholder="请输入交易密码" value="123456">
+            </label>
+            <label class="item item-input reg_li"> <span>验证码 </span>
+                <input type="text" placeholder="输入验证码" value="5434">
+                <a class=" button button-small button-stable">获取验证码</a> </label>
+        </div>
+        <div class="padding-left padding-right">
+            <button class="button button-assertive button-block" ng-click="goprocessing()">确认支付</button>
+        </div>
+    </ion-content>
+</ion-view>

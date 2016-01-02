@@ -1,0 +1,50 @@
+<ion-view>
+    <ion-header-bar  align-title="center" class="bar-stable bar-assertive">
+        <div class="button icon ion-ios-arrow-back button-clear" ng-click="$root.back()"></div>
+        <h1 class="title">我的银行卡</h1>
+
+    </ion-header-bar>
+
+    <ion-content has-bouncing="true" class="scroll-content ionic-scroll my_home_content">
+
+        <div class="list mb_7 xjq_tit">为了您的资金安全，目前仅支持添加一张银行卡</div>
+        <div class="list padding-top">
+            <label class="item item-input wallet_input  ">
+                <span>持卡人</span>
+                <input type="text" ng-model="ckname" placeholder="姓名">
+                <i class="icon ion-close-circled" ng-if="ckname"></i>
+                <img src="img/icon_info.png" class="icon_info">
+            </label>
+
+            <label class="item item-input item-select" ng-click="goaccountSelect()">
+                <div class="input-label">
+                    银行
+                </div>
+                <select>
+                    <option>选择银行卡类型</option>
+                    <option>中国银行</option>
+                    <option>中国银行2</option>
+                    <option>中国银行3</option>
+                </select>
+            </label>
+            <label class="item item-input wallet_input">
+                <span>卡号</span>
+                <input type="text" placeholder="请输入卡号" value="621384584858968548565">
+                <i class="icon ion-close-circled"></i>
+            </label>
+            <label class="item item-input wallet_input">
+                <span>身份证</span>
+                <input type="text" placeholder="请输入身份证" value="823584198808068213">
+                <i class="icon ion-close-circled"></i>
+            </label>
+            <label class="item item-input wallet_input">
+                <span>验证码</span>
+                <input type="text" placeholder="请输入验证码" value="2123">
+                <a class=" button button-small button-stable">已发送45秒</a>
+            </label>
+        </div>
+        <div class="padding-left padding-right">
+            <button class="button button-assertive button-block" ng-click="goaccountBankCardMy()">下一步</button>
+        </div>
+    </ion-content>
+</ion-view>

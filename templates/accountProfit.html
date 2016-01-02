@@ -1,0 +1,50 @@
+<ion-view>
+    <ion-header-bar align-title="center" class="bar-assertive">
+        <div class="button icon ion-ios-arrow-back button-clear" ng-click="$root.back();"></div>
+        <h1 class="title">我的投资</h1>
+    </ion-header-bar>
+    <ion-content has-bouncing="true" class="scroll-content ionic-scroll my_home_content">
+        <div class="list mb_7">
+            <dl class="nav_tit nav_tit0">
+                <dd><a ng-class="{true:'select', false:''}[type=='0']" ng-click="type='0'">固定收益</a></dd>
+                <dd><a ng-class="{true:'select', false:''}[type=='1']" ng-click="type='1'">浮动收益</a></dd>
+                <dd><a ng-class="{true:'select', false:''}[type=='2']" ng-click="type='2'">公募基金</a></dd>
+            </dl>
+        </div>
+        <div class="list padding-left padding-right" ng-if="type=='0'">
+            <div class="gd_box" ng-click="detail()">
+                <div class="sy_box">
+                    <h3>新手体验产品</h3>
+
+                    <div class="fl">
+                        <p>在投本金 <span>1,000元</span></p>
+
+                        <p>预期到期日</span> <span>2015-11-04</span></p>
+
+                        <p>预期年化收益率<span> 1,00000元</span></p>
+                    </div>
+                    <div class="sy_txt fr">
+                        <h3>+13.6元</h3>
+
+                        <p>预期到期收益</p>
+                    </div>
+                </div>
+                <div class="sy_tb fr">到期结息中
+                </div>
+            </div>
+        </div>
+
+        <div class="list padding" ng-if="type=='1'">
+            <div class="fd_box"><img src="img/icon_3.jpg"><p>暂无浮动收益产品</p></div>
+        </div>
+
+        <div class="list padding" ng-if="type=='2'">
+            <div class="fd_box"><img src="img/icon_3.jpg"><p>暂无公募基金</p></div>
+        </div>
+
+        <div class="list padding-left padding-right">
+            <button class="button button-stable button-block" ng-click="historyTouzi()">历史投资记录</button>
+        </div>
+    </ion-content>
+
+</ion-view>

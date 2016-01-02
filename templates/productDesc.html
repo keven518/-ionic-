@@ -1,0 +1,112 @@
+<ion-view>
+    <ion-header-bar align-title="center" class="bar-assertive">
+        <div class="button icon ion-ios-arrow-back button-clear" ng-click="closeModal()"></div>
+        <h1 class="title">{{titledesc}}</h1>
+    </ion-header-bar>
+    <ion-content has-bouncing="true" class="scroll-content ionic-scroll product_content has-header">
+        <div class="list mb_7" ng-if="type!='5'">
+            <dl class="nav_tit">
+                <dd><a ng-click="openModal('1')" ng-class="{true:'select', false:''}[type=='1']">项目简述</a></dd>
+                <dd><a ng-click="openModal('2')" ng-class="{true:'select', false:''}[type=='2']">风险揭示</a></dd>
+                <dd><a ng-click="openModal('3')" ng-class="{true:'select', false:''}[type=='3']">项目详情</a></dd>
+                <dd><a ng-click="openModal('4')" ng-class="{true:'select', false:''}[type=='4']">平台优势</a></dd>
+            </dl>
+        </div>
+        <div class="list txt_con" ng-if="type=='1'">
+            <h3>产品亮点</h3>
+
+            <p>朝阳永续懂事会亲自担任基金经理，并被誉为私募的"伯乐"。通过优选投资管理人组合，风格互补，降低投资单一阳光私募的业波动风险，提升组合整体业绩稳定性。</p>
+
+            <h3>产品存续</h3>
+
+            <p>
+                朝阳永续懂事会亲自担任基金经理，并被誉为私募的通过优选投资管理人组合，风格互补，降低投资单一阳光私募的业波动风险，提升组合整体业绩稳定性。朝阳永续懂事会亲自担任基金经理，并被誉为私募的"伯乐"。通过优选投资管理人组合，风格互补，降低投资单一阳光私募的业波动风险，提升组合整体业绩稳定性。朝阳永续懂事会亲自担任基金经理，并被誉为私募的"伯乐"。通过优选投资管理人组合，风格互补，降低投资单一阳光私募的业波动风险，提升组合整体业绩稳定性。</p>
+
+            <h3>产品费用</h3>
+
+            <p>
+                历任建行海南省信托投资公司上海营业部总经理，厦门光正国际投资发展有限公司副总经理，海通证券股份有限公司营业部总经理，上海聚池投资管理有限公司副总裁兼投资经理，深圳民森投资有限公司创始合伙人，上海贤盛投资管理有限公司董事长兼投资总监。</p>
+
+            <h3>分红方式</h3>
+
+            <p>
+                1994年上海大学国际商学院国际经济日英复合专业毕业后进入国企上市公司工作，负责国外政商界客户与政府部门，相关企业的交流视察，积累了广泛的人脉培养了宏观市场的判断力。1994年上海大学国际商学院国际经济日英复合专业毕业后进入国企上市公司工作判断力。</p>
+
+            <h3>分红方式</h3>
+
+            <p>
+                朝阳永续懂事会亲自担任基金经理，并被誉为私募的通过优选投资管理人组合，风格互补，降低投资单一阳光私募的业波动风险，提升组合整体业绩稳定性选投资管理人组合，风格互补，降低投资单一阳光私募的业波动风险，提升组合整体业绩稳定性。</p>
+        </div>
+        <div class="list padding" ng-if="type=='2'">
+            <div class="risk_box">
+                <div class="risk_top"></div>
+                <div class="risk_mid">
+                    <h3>尊敬的客户</h3>
+                    <h4>在购买投资产品之前，请您仔细阅读如下风险提示，并按照您的实际情况与风险承受能力，审慎作出投资决策。产品收益权对应最终产品投领域为证券市场，本产品收益权面临包括但不限于以下风险：</h4>
+                    <h5> ●（一）市场风险</h5>
+
+                    <p>证券市场价格因受各种因素的影响而引起的波动，将使产品资产面临潜在险。市场风险可分为股票投资风险和债券投资风险。
+                        1.股票投资风险主要包括：<br>
+                        （1）国家货币政策、财政政策、产业政策、宏观经济运行周期性波动等变化对证券市场产生一定的影响，导致市场价格水平波动的风险。<br>
+                        （2）宏观经济运行周期性波动，对股票市场的收益水平产生影响的风险<br>
+                        （3）上市公司的经营状况受多种因素影响，如市场、技术、竟争、管理、财务等都会导致公司盈利发生变化，从而导致股票价格变动的风险</p>
+                    <h5> ●（二）管理风险</h5>
+
+                    <p>在购买投资产品之前，请您仔细阅读如下风险提示，并按照您的实际情况与风险承受能力，审慎作出投资决策。产品收益权对应最终产品投领域为证券市场，本产品收益权面临包括但不限于以下风险：</p>
+
+                </div>
+                <div class="risk_bot"></div>
+
+            </div>
+        </div>
+        <div class="list padding" ng-if="type=='3'">
+            <div class="product_xq padding">
+                <h3>产品结构</h3>
+
+                <div class="xq_1"></div>
+                <h3>朝阳董事长廖冰亲自担任基金经理</h3>
+
+                <div class="xq_2"></div>
+                <h3>朝阳FOF基金—用有限的资金投向一揽子顶尖私募</h3>
+
+                <div class="xq_3"></div>
+                <h3>朝阳永续FOF基金—直投稀缺私募，收益可期</h3>
+
+                <div class="xq_4"></div>
+                <h3>投资策略</h3>
+
+                <div class="xq_5"></div>
+                <h3>投资流程</h3>
+
+                <div class="xq_6"></div>
+                <h3>朝阳FOF-1号组合业绩</h3>
+
+                <div class="xq_7"></div>
+            </div>
+        </div>
+        <div class="list padding" ng-if="type=='4'">
+            <div class="super_box">
+                <div class="super_top"></div>
+                <div class="super_mid">
+                    <p>聚友宝是上海冰创信息技术有限公司专为白领中产阶级倾力打造的一款综合金融服务平台，由上海冰创信息技术有息公司独立研发上线。</p>
+
+                    <p>上海冰创信息技术有限公司线下拥有很强的产品研发能力及严格的风控体系，向中产阶级提供多元化的理财方式，满足各类的理财需求。在大资管时代的背景下，贯彻普惠金融（inclusive financial
+                        system）的理念，有效、全方位为中产阶级提供金融服务，致力成为中产阶级的私人理财顾问，全面打造专属中产阶级的综合金融服务平台。</p>
+
+                    <p>上海冰创信息技术有限公司线下拥有很强的产品研发能力及严格的风控体系，向中产阶级提供多元化的理财方式，满足各类的理财需求。在大资管时代的背景下，贯彻普惠金融（inclusive financial
+                        system）的理念，有效、全方位为中产阶级提供金融服务，致力成为中产阶级的私人理财顾问，全面打造专属中产阶级的综合金融服务平台。</p>
+                </div>
+                <div class="super_bot"></div>
+            </div>
+        </div>
+        <ul class="list" ng-if="type=='5'">
+            <li class="item item-icon-left"><i class="icon ion-ios-clock-outline assertive"></i>2015-08-28 步＊云 购买了 50,000元</li>
+            <li class="item item-icon-left"><i class="icon ion-ios-clock-outline assertive"></i>2015-08-28 步＊云 购买了 50,000元</li>
+            <li class="item item-icon-left"><i class="icon ion-ios-clock-outline assertive"></i>2015-08-28 步＊云 购买了 50,000元</li>
+            <li class="item item-icon-left"><i class="icon ion-ios-clock-outline assertive"></i>2015-08-28 步＊云 购买了 50,000元</li>
+            <li class="item item-icon-left"><i class="icon ion-ios-clock-outline assertive"></i>2015-08-28 步＊云 购买了 50,000元</li>
+            <li class="item item-icon-left"><i class="icon ion-ios-clock-outline assertive"></i>2015-08-28 步＊云 购买了 50,000元</li>
+        </ul>
+    </ion-content>
+</ion-view>
+

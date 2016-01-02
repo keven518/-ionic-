@@ -1,0 +1,108 @@
+<ion-view>
+    <ion-header-bar align-title="center" class="bar-assertive">
+        <div class="button icon ion-ios-arrow-back button-clear" ng-click="$root.back()"></div>
+
+        <h1 class="title">产品详情</h1>
+    </ion-header-bar>
+
+    <ion-content  has-bouncing="true" class="scroll-content ionic-scroll product_content has-footer">
+
+        <div class="list mb_7">
+            <ul class="product_tb">
+                <li><h3>6.5<span>%</span></h3><p>预期年化收益率</p></li>
+                <li><h3>6<span>个月</span></h3><p>期限</p></li>
+            </ul>
+            <div class="financial_product_progress"  style="margin:0;">
+                <div class="product_progress"></div>
+            </div>
+            <div class="financial_result ">
+                <p> <img src="img/financial_1.png">距离购买结束<em>3</em>天<em>2</em>时<em>1</em>分<em>23</em>秒</p>
+                <span>剩余可投：39.0万</span>
+            </div>
+        </div>
+
+        <div class="list mb_7">
+            <div class="product_data"></div>
+        </div>
+
+        <div class="list product_table mb_7">
+            <h3 class=" padding">产品说明</h3>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td class="tit">产品总额</td>
+                    <td>100万</td>
+                </tr>
+                <tr>
+                    <td class="tit">起投金额</td>
+                    <td>10000万</td>
+                </tr>
+                <tr>
+                    <td class="tit">收益类型</td>
+                    <td>浮动收益</td>
+                </tr>
+                <tr>
+                    <td class="tit">净值公布</td>
+                    <td>每周公布一次</td>
+                </tr>
+                <tr>
+                    <td class="tit">预计到账日</td>
+                    <td>不固定</td>
+                </tr>
+                <tr>
+                    <td class="tit">收益分配</td>
+                    <td>到期一次兑换本金收益</td>
+                </tr>
+                <tr>
+                    <td class="tit">可提前结束</td>
+                    <td>2015-10-24</td>
+                </tr>
+                <tr>
+                    <td class="tit">赎回规则</td>
+                    <td>封闭期6个月，每3个月开放赎回</td>
+                </tr>
+                <tr>
+                    <td class="tit">赎回费率</td>
+                    <td>1%</td>
+                </tr>
+            </table>
+        </div>
+        <div class="list shadow" st>
+            <a class="item  item-icon-right" ng-click="openModal('1')">
+                <img src="img/ioc-1.png" class="img_icon">
+                项目简述
+                <i class="icon ion-ios-arrow-right"></i>
+            </a>
+            <a class="item  item-icon-right" ng-click="openModal('2')">
+                <img src="img/ioc-2.png" class="img_icon">
+                风险提示
+                <i class="icon ion-ios-arrow-right"></i>
+            </a>
+            <a class="item  item-icon-right" ng-click="openModal('3')">
+                <img src="img/ioc-3.png" class="img_icon">
+                项目详情
+                <i class="icon ion-ios-arrow-right"></i>
+            </a>
+            <a class="item item-icon-right" ng-click="openModal('4')">
+                <img src="img/ioc-4.png" class="img_icon">
+                平台优势
+                <i class="icon ion-ios-arrow-right"></i>
+            </a>
+            <a class="item item-icon-right" ng-click="openModal('5')">
+                <img src="img/ioc-5.png" class="img_icon">
+                最近投资
+                <i class="icon ion-ios-arrow-right"></i>
+            </a>
+
+        </div>
+    </ion-content>
+
+    <div class="bar bar-footer invest_box ">
+
+        <span>起投金额：<em>113000元</em></span>
+        <div class="tz_btn">
+            <a class=" button button-small button-assertive" href="#/tab/product2Buy">投资</a>
+        </div>
+    </div>
+
+
+</ion-view>

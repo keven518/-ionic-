@@ -1,0 +1,29 @@
+<ion-view>
+    <ion-header-bar align-title="center" class="bar-stable bar-assertive">
+        <div class="button icon ion-ios-arrow-back button-clear" ng-click="$root.back()"></div>
+        <h1 class="title">找回交易密码</h1>
+    </ion-header-bar>
+    <ion-content has-bouncing="true" class="scroll-content ionic-scroll my_home_content">
+        <div class="list padding-top">
+            <label class="item item-input wallet_input  "> <span class="fd">登录密码</span>
+                <input type="password" placeholder="请输入登录密码">
+            </label>
+            <label class="item item-input wallet_input  "> <span class="fd">身份证</span>
+                <input type="text" placeholder="请输入身份证">
+            </label>
+            <label class="item item-input wallet_input  "> <span class="fd">新密码</span>
+                <input type="password" placeholder="请输入新的交易密码">
+            </label>
+            <label class="item item-input wallet_input  "> <span class="fd">确认新密码</span>
+                <input type="password" placeholder="请再次输入新的交易密码">
+            </label>
+            <label class="item item-input wallet_input  "> <span class="fd">验证码</span>
+                <input type="text" placeholder="请输入验证码">
+                <a class=" button button-small button-assertive">获取验证码</a>
+            </label>
+        </div>
+        <div class="padding-left padding-right">
+            <button class="button button-assertive button-block">完成</button>
+        </div>
+    </ion-content>
+</ion-view>

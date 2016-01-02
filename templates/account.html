@@ -1,0 +1,72 @@
+<ion-view>
+    <ion-content  has-bouncing="true" class="scroll-content ionic-scroll my_home_content has-footer">
+        <div class="myhome_box">
+            <div class="accout_tit">
+                <h3>我的账户</h3>
+                <a href="#/tab/accountInvitation">邀请</a></div>
+            <div class="accout_num">0.<span>00</span></div>
+            <h4 class="txt_2">昨日收益</h4>
+            <div class="accout_rate">当前持仓收益 <span>0.00</span> <span>0.00%</span></div>
+            <ul class="accout_total">
+                <li>
+                    <h3>0.<span>00</span></h3>
+                    <p>总资产</p>
+                </li>
+                <li>
+                    <h3>0.<span>00</span></h3>
+                    <p>总资产</p>
+                </li>
+            </ul>
+        </div>
+        <ul class="list home_list">
+            <li class="item"><a href="#/tab/accountProfit"><img src="img/myhome_04.jpg">固定收益</a></li>
+            <li class="item"><a href="#/tab/accountProfit"><img src="img/myhome_07.jpg">浮动收益</a></li>
+            <li class="item"><a href="#"><img src="img/myhome_09.jpg">公募基金</a></li>
+        </ul>
+        <ul class="list home_list  home_nav">
+            <li class="item"><a href="#/tab/accountDaijinquan"><img src="img/myhome_11.jpg">我的代金券</a></li>
+            <li class="item"><a href="#/tab/accountQianbao"><img src="img/myhome_14.jpg">我的钱包</a></li>
+            <li class="item"><a href="#/tab/accountBankcard"><img src="img/myhome_14.jpg">我的银行卡</a></li>
+            <li class="item"><a href="#/tab/accountMore"><img src="img/myhome_17.jpg">更多</a></li>
+        </ul>
+
+        <ul class="list home_list  home_nav">
+            <li class="item"><a ng-click="openwin1()"><img src="img/myhome_11.jpg">弹窗1</a></li>
+            <li class="item"><a ng-click="openwin2()"><img src="img/myhome_14.jpg">弹窗2</a></li>
+            <li class="item"><a ng-click="openwin3()"><img src="img/myhome_14.jpg">弹窗3</a></li>
+            <li class="item"><a ng-click="openwin4()"><img src="img/myhome_14.jpg">弹窗4</a></li>
+            <li class="item"><a ng-click="openwin5()"><img src="img/myhome_14.jpg">弹窗5</a></li>
+            <li class="item"><a ng-click="openwin6()"><img src="img/myhome_14.jpg">弹窗6</a></li>
+            <li class="item"><a ng-click="openwin7()"><img src="img/myhome_14.jpg">弹窗7</a></li>
+            <li class="item"><a ng-click="openwin8()"><img src="img/myhome_14.jpg">弹窗8</a></li>
+            <li class="item"><a ng-click="openwin9()"><img src="img/myhome_14.jpg">弹窗8</a></li>
+            <li class="item"><a ng-click="openwin10()"><img src="img/myhome_14.jpg">弹窗10</a></li>
+        </ul>
+
+        <ul class="list home_list  home_nav">
+            <div class="padding-left padding-right">
+                <button class="button button-assertive button-block" ng-click="gologin()">退出登录</button>
+            </div>
+        </ul>
+    </ion-content>
+    <div class="tabs tabs-icon-top">
+        <a class="tab-item " href="#/dash.html">
+            <i class="icon ion-ios-home-outline "></i>
+            首页
+        </a>
+        <a class="tab-item" href="#/product1.html">
+            <i class="icon ion-ios-list-outline"></i>
+            理财
+        </a>
+
+        <a class="tab-item" href="#/chuangxin.html">
+            <i class="icon ion-navigate"></i>
+            创新
+        </a>
+        <a class="tab-item  active assertive" href="#/account.html">
+            <i class="icon ion-person assertive"></i>
+            我
+        </a>
+    </div>
+
+</ion-view>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>无标题文档</title>
+    <link href="../lib/ionic/css/ionic.min.css" type="text/css" rel="stylesheet">
+    <link href="../css/index_1.css" type="text/css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+        <link href="css/ionic.app.css" rel="stylesheet">
+        -->
+
+    <!-- ionic/angularjs js -->
+    <script src="../lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="../cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="../js/app.js"></script>
+</head>
+
+<body ng-app="starter">
+<ion-view>
+    <ion-header-bar align-title="center" class="bar-assertive">
+        <div class="button icon ion-ios-arrow-back button-clear" ng-click="$root.back()"></div>
+        <h1 class="title">历史投资记录</h1>
+    </ion-header-bar>
+    <ion-content has-bouncing="true" class="scroll-content ionic-scroll my_home_content">
+        <div class="list padding-left padding-right padding-top mb_7">
+            <h3 class="history_time">2015-08-09 12:11</h3>
+
+            <div class="item history_bor">
+                <div class="history_tit">
+                    <h3>苏宁电器项目</h3>
+                    <a class="button button-small">已赎回</a>
+                </div>
+                <div class="history_details">
+                    <div class="history_num fl">
+                        <p>净认购金额：<span>10,000.00 元</span></p>
+
+                        <p>累计赎回金额：<span>7,706.00元</span></p>
+                    </div>
+                    <div class="history_result fr">
+                        <h3>-780.00元</h3>
+
+                        <p>累计盈亏</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list padding-left padding-right padding-top mb_7">
+            <h3 class="history_time">2015-08-09 12:11</h3>
+
+            <div class="item history_bor">
+                <div class="history_tit">
+                    <h3>苏宁电器项目</h3>
+                    <a class="button button-small">已赎回</a>
+                </div>
+                <div class="history_details">
+                    <div class="history_num fl">
+                        <p>净认购金额：<span>10,000.00 元</span></p>
+
+                        <p>累计赎回金额：<span>7,706.00元</span></p>
+                    </div>
+                    <div class="history_result fr">
+                        <h3>-780.00元</h3>
+
+                        <p>累计盈亏</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+</body>
+</html>

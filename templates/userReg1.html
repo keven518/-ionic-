@@ -1,0 +1,34 @@
+<ion-view>
+    <ion-header-bar align-title="center" class="bar-stable bar-assertive">
+        <div class="button icon ion-ios-arrow-back button-clear" ng-click="$root.back()"></div>
+        <h1 class="title">注册</h1>
+        <a class="button button-small button-assertive " href="#/login">登录</a>
+    </ion-header-bar>
+
+    <ion-content has-bouncing="true" class="scroll-content ionic-scroll my_home_content">
+        
+        <div class="list padding reg_box">
+            <label class="item item-input reg_li">
+                <img src="img/reg_07.png">
+                <input type="password" ng-model="regpwd" placeholder="设置登录密码（6-20位字母、数字或符号）">
+                <i class="icon ion-close-circled" ng-if="regpwd"></i>
+                <img src="img/icon_eye.png" class="icon_eye">
+            </label>
+            <label class="item item-input reg_li">
+                <img src="img/reg_07.png">
+                <input type="password" ng-model="regpwd1" placeholder="请再次输入密码">
+                <i class="icon ion-close-circled" ng-if="regpwd1"></i>
+                <img src="img/icon_eye.png" class="icon_eye">
+            </label>
+
+            <label class="item item-input reg_li">
+                <img src="img/reg_08.png">
+                <input type="text" ng-model="regycode" placeholder="邀请码（选填）">
+                <img src="img/icon_xg.png" ng-if="regycode">
+            </label>
+        </div>
+        <div class="padding-left padding-right">
+            <button class="button button-assertive button-block" ng-click="gologin()">完成注册</button>
+        </div>
+    </ion-content>
+</ion-view>

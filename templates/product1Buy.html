@@ -1,0 +1,42 @@
+<ion-view>
+    <ion-header-bar align-title="center" class="bar-stable bar-assertive">
+        <div class="button icon ion-ios-arrow-back button-clear" ng-click="$root.back()"></div>
+        <h1 class="title">确认投资</h1>
+    </ion-header-bar>
+    <ion-content has-bouncing="true" class="scroll-content ionic-scroll start_content_product ">
+        <div class="list financial_box padding-bottom">
+            <h3 class="tit">知名娱乐上市公司并购项目</h3>
+
+            <p class="invest_t1">一万元起投，一万元递增</p>
+
+            <p class="invest_t1">剩余可投：<span>123537.0万元</span></p>
+
+            <p class="invest_t1">风险等级：稳健型</p>
+        </div>
+        <div class="list padding-left padding-right">
+            <label class="item item-input">
+                <input type="text" placeholder="请输入投资金额" class="text_1" value="100000"><i
+                    class="icon ion-close-circled"></i>
+                <button class=" button button-clear">元</button>
+            </label>
+        </div>
+        <ul class="list explain">
+            <li class="item ">
+                <h3 class="fl">预期到期收益：<span class="color_1">0.00元</span></h3>
+                <a class="button button-outline icon-right  button-assertive  button-small fr">收益记算</a><a href="#"></a>
+            </li>
+        </ul>
+        <ul class="list ">
+            <li class="item item-icon-right"><span class="xjq_t1">现金券：</span><a  href="#tab/productBuySelectXianjinquan"
+                    class="button button-assertive button-small fl">0张可用</a><span class="xjq_t2">使用1张，立减20元</span><i
+                    class="icon ion-ios-arrow-right gray"></i></li>
+            <li class="item">支付金额：<i class="badge badge-assertive badge">10100.00元</i></li>
+        </ul>
+        <div class="buy_box"><input type="checkbox">匿名购买</div>
+
+
+        <div class="list padding">
+            <button class="button button-assertive button-block" ng-click="goproductPay()">确认订单</button>
+        </div>
+    </ion-content>
+</ion-view>

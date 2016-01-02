@@ -1,0 +1,35 @@
+<ion-view>
+    <ion-header-bar align-title="center" class="bar-stable bar-assertive">
+
+        <h1 class="title">登录</h1>
+        <a class="button button-small button-assertive " href="#/userReg">注册</a>
+    </ion-header-bar>
+
+    <ion-content has-bouncing="true" class="scroll-content ionic-scroll my_home_content">
+
+        <div class="list padding reg_box">
+            <label class="item item-input reg_li">
+
+                <img src="img/reg_03.png">
+                <input type="text" ng-model="loginphone" placeholder="请输入手机号">
+                <i class="icon ion-close-circled" ng-if="loginphone"></i>
+            </label>
+            <label class="item item-input reg_li">
+                <img src="img/reg_07.png">
+                <input type="password" ng-model="loginpwd" placeholder="请输入密码">
+                <i class="icon ion-close-circled" ng-if="loginpwd"></i>
+            </label>
+        </div>
+        <div class="padding-left padding-right">
+            <button class="button button-assertive button-block" ng-click="godash()">登录</button>
+        </div>
+
+        <div class="list padding">
+            <div class="login_btn">
+                <p><a href="#/userReg"> <img src="img/icon_login.png"></a></p>
+
+                <h3><a href="#">忘记密码？</a></h3>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

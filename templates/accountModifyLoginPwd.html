@@ -1,0 +1,24 @@
+<ion-view>
+    <ion-header-bar align-title="center" class="bar-stable bar-assertive">
+        <div class="button icon ion-ios-arrow-back button-clear" ng-click="$root.back()"></div>
+        <h1 class="title">修改登录密码</h1>
+    </ion-header-bar>
+    <ion-content has-bouncing="true" class="scroll-content ionic-scroll my_home_content">
+        <div class="list padding-top">
+            <label class="item item-input wallet_input  "> <span>原密码</span>
+                <input type="password" placeholder="请输入原有登录密码">
+            </label>
+            <label class="item item-input wallet_input  "> <span>新密码</span>
+                <input type="password" placeholder="请输入新的登录密码">
+            </label>
+            <label class="item item-input wallet_input  "> <span>再次输入</span>
+                <input type="password" placeholder="请确认新的登录密码">
+            </label>
+
+            <div class="xg_ts"><img src="../img/icon_xg.png">6~20位，至少包括数字、字母、符号中的两种</div>
+        </div>
+        <div class="padding-left padding-right">
+            <button class="button button-assertive button-block">确定修改</button>
+        </div>
+    </ion-content>
+</ion-view>
